@@ -1,6 +1,6 @@
 Features
 
-ETL Pipeline:
+ETL Pipeline (DatabaseRelationalPokedex.py) :
 
 Imports Pokémon data from CSV files into a PostgreSQL database.
 
@@ -8,7 +8,7 @@ Cleans and formats data for efficient querying.
 
 Handles missing values and duplicate entries.
 
-Database:
+Database (Database_Schema) :
 
 PostgreSQL database storing all Pokémon attributes, abilities, evolutions, and types.
 
@@ -16,7 +16,7 @@ Normalized tables to reduce redundancy.
 
 Supports complex queries and filtering.
 
-GUI:
+GUI (virtual_pokedex.py):
 
 Python Tkinter-based interface for interactive exploration.
 
@@ -24,7 +24,7 @@ Search Pokémon by name, type, generation, or abilities.
 
 Displays results in a user-friendly table format.
 
-AI Integration:
+AI Integration (virtual_pokedex.py) :
 
 Uses a local Ollama model to translate natural language questions into SQL queries.
 
