@@ -53,5 +53,4 @@ python Virtual_pokedex.py
 
 ## 7. Usage Tips
 - Type `exit` in the GUI input to close the application.  
-- Queries and responses are logged in `query_log.txt` for debugging.  
 - Ask simple, specific questions for best results (e.g., “What is Pikachu”).
