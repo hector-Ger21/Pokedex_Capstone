@@ -31,3 +31,6 @@ Uses a local Ollama model to translate natural language questions into SQL queri
 Answers questions like “What Pokémon have the ability Levitate?” or “Show all Generation 3 Water-types.”
 
 Generates narrative-style responses in Pokémon language.
+
+Results
+Shows the expect result of the app after use
