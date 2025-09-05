@@ -16,7 +16,7 @@ Normalized tables to reduce redundancy.
 
 Supports complex queries and filtering.
 
-GUI (virtual_pokedex.py):
+GUI (Virtual_pokedex.py):
 
 Python Tkinter-based interface for interactive exploration.
 
@@ -24,7 +24,7 @@ Search Pokémon by name, type, generation, or abilities.
 
 Displays results in a user-friendly table format.
 
-AI Integration (virtual_pokedex.py) :
+AI Integration (Virtual_pokedex.py) :
 
 Uses a local Ollama model to translate natural language questions into SQL queries.
 
@@ -33,4 +33,4 @@ Answers questions like “What Pokémon have the ability Levitate?” or “Show
 Generates narrative-style responses in Pokémon language.
 
 Results
-Shows the expect result of the app after use
+Shows the expected result of the app after use
