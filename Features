@@ -1,0 +1,33 @@
+Features
+
+ETL Pipeline:
+
+Imports Pokémon data from CSV files into a PostgreSQL database.
+
+Cleans and formats data for efficient querying.
+
+Handles missing values and duplicate entries.
+
+Database:
+
+PostgreSQL database storing all Pokémon attributes, abilities, evolutions, and types.
+
+Normalized tables to reduce redundancy.
+
+Supports complex queries and filtering.
+
+GUI:
+
+Python Tkinter-based interface for interactive exploration.
+
+Search Pokémon by name, type, generation, or abilities.
+
+Displays results in a user-friendly table format.
+
+AI Integration:
+
+Uses a local Ollama model to translate natural language questions into SQL queries.
+
+Answers questions like “What Pokémon have the ability Levitate?” or “Show all Generation 3 Water-types.”
+
+Generates narrative-style responses in Pokémon language.
