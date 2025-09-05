@@ -17,7 +17,7 @@ pip install requests
 ## 3. Configure PostgreSQL Database
 - Make sure PostgreSQL is installed and running locally.  
 - Create a database (e.g., `Capstone_testing`).  
-- Update connection settings in `DatabaseRelationalPokedex.py` and `virtual_pokedex.py` under `DB_CONFIG`:
+- Update connection settings in `DatabaseRelationalPokedex.py` and `Virtual_pokedex.py` under `DB_CONFIG`:
 
 DB_CONFIG = {
     'host': 'localhost',
@@ -44,7 +44,7 @@ python DatabaseRelationalPokedex.py
 ## 6. Launch the GUI with AI Integration
 Run the main interface:
 
-python virtual_pokedex.py
+python Virtual_pokedex.py
 
 - Interactively search Pokémon by **name, type, generation, or abilities**.  
 - Ask natural language questions; the Ollama model converts them to SQL and returns narrative-style responses.  
