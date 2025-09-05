@@ -1,0 +1,56 @@
+# Virtual Pokédex Setup Instructions
+
+Follow these steps to set up and run the Virtual Pokédex project:
+
+## 1. Clone the Repository
+git clone https://github.com/yourusername/Pokedex_Capstone.git
+cd Pokedex_Capstone
+
+## 2. Install Required Python Packages
+Ensure you have Python 3.10+ installed. Then install dependencies:
+
+pip install psycopg2-binary
+pip install ollama
+pip install pillow
+pip install requests
+
+## 3. Configure PostgreSQL Database
+- Make sure PostgreSQL is installed and running locally.  
+- Create a database (e.g., `Capstone_testing`).  
+- Update connection settings in `DatabaseRelationalPokedex.py` and `virtual_pokedex.py` under `DB_CONFIG`:
+
+DB_CONFIG = {
+    'host': 'localhost',
+    'port': '5432',
+    'dbname': 'Capstone_testing',
+    'user': 'your_postgres_user',
+    'password': 'your_postgres_password'
+}
+
+## 4. Initialize the Database
+Run the schema script to create the normalized Pokémon tables:
+
+psql -U your_postgres_user -d Capstone_testing -f Database_Schema.sql
+
+This will create all tables including `pokedex`, `stats`, `types`, `abilities`, and junction tables.
+
+## 5. Load Pokémon Data (ETL Pipeline)
+Run the ETL script to import and clean Pokémon data from CSVs into PostgreSQL:
+
+python DatabaseRelationalPokedex.py
+
+- This handles missing values, duplicates, and ensures data is ready for querying.  
+
+## 6. Launch the GUI with AI Integration
+Run the main interface:
+
+python virtual_pokedex.py
+
+- Interactively search Pokémon by **name, type, generation, or abilities**.  
+- Ask natural language questions; the Ollama model converts them to SQL and returns narrative-style responses.  
+- Images of Pokémon will display automatically if available.  
+
+## 7. Usage Tips
+- Type `exit` in the GUI input to close the application.  
+- Queries and responses are logged in `query_log.txt` for debugging.  
+- Ask simple, specific questions for best results (e.g., “What is Pikachu”).
