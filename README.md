@@ -1,2 +1,2 @@
 # Pokedex_Capstone
-Interactive SQL-based Pokédex with Python, PostgreSQL, and NLP integration.
+This project is an interactive SQL-based Pokédex that allows users to explore Pokémon data using both a graphical interface and natural language queries. The system leverages a local PostgreSQL database, Python, and AI integration to dynamically search for Pokémon by attributes like type, abilities, and generation. It’s designed as a learning-focused project to demonstrate ETL, database design, GUI implementation, and AI-powered query interpretation.
