@@ -1,2 +1,3 @@
-# Pokedex_Capstone
 This project is an interactive SQL-based Pokédex that allows users to explore Pokémon data using both a graphical interface and natural language queries. The system leverages a local PostgreSQL database, Python, and AI integration to dynamically search for Pokémon by attributes like type, abilities, and generation. It’s designed as a learning-focused project to demonstrate ETL, database design, GUI implementation, and AI-powered query interpretation.
+
+Disclaimer: While the application functions correctly and demonstrates the intended features, some information retrieved may contain minor inaccuracies. The results are intended to showcase what the app could do in theory, rather than guarantee perfectly accurate Pokémon data.
