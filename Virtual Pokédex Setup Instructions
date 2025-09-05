@@ -9,6 +9,7 @@ cd Pokedex_Capstone
 ## 2. Install Required Python Packages
 Ensure you have Python 3.10+ installed. Then install dependencies:
 
+pip install panda
 pip install psycopg2-binary
 pip install ollama
 pip install pillow
